@@ -6,17 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EF4217732D75988700A91CE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF42176D2D75988700A91CE5 /* Preview Assets.xcassets */; };
+		EF4217742D75988700A91CE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF42176F2D75988700A91CE5 /* Assets.xcassets */; };
+		EF4217752D75988700A91CE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4217702D75988700A91CE5 /* ContentView.swift */; };
+		EF4217762D75988700A91CE5 /* MVVMExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4217712D75988700A91CE5 /* MVVMExampleApp.swift */; };
+		EF4217792D7598C600A91CE5 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4217782D7598C600A91CE5 /* Webservice.swift */; };
+		EF42177C2D75990400A91CE5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42177B2D75990400A91CE5 /* Product.swift */; };
+		EF42177F2D759BEC00A91CE5 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42177E2D759BEC00A91CE5 /* ProductListViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EF42175C2D75987A00A91CE5 /* MVVMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF42176D2D75988700A91CE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF42176F2D75988700A91CE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF4217702D75988700A91CE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF4217712D75988700A91CE5 /* MVVMExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMExampleApp.swift; sourceTree = "<group>"; };
+		EF4217782D7598C600A91CE5 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		EF42177B2D75990400A91CE5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		EF42177E2D759BEC00A91CE5 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		EF42175E2D75987A00A91CE5 /* MVVMExample */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MVVMExample;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EF4217592D75987A00A91CE5 /* Frameworks */ = {
@@ -32,7 +41,7 @@
 		EF4217532D75987A00A91CE5 = {
 			isa = PBXGroup;
 			children = (
-				EF42175E2D75987A00A91CE5 /* MVVMExample */,
+				EF4217722D75988700A91CE5 /* MVVMExample */,
 				EF42175D2D75987A00A91CE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +52,52 @@
 				EF42175C2D75987A00A91CE5 /* MVVMExample.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EF42176E2D75988700A91CE5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF42176D2D75988700A91CE5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF4217722D75988700A91CE5 /* MVVMExample */ = {
+			isa = PBXGroup;
+			children = (
+				EF42177D2D759BD600A91CE5 /* ViewModel */,
+				EF42177A2D7598F500A91CE5 /* Model */,
+				EF4217772D7598A900A91CE5 /* Service */,
+				EF4217702D75988700A91CE5 /* ContentView.swift */,
+				EF4217712D75988700A91CE5 /* MVVMExampleApp.swift */,
+				EF42176F2D75988700A91CE5 /* Assets.xcassets */,
+				EF42176E2D75988700A91CE5 /* Preview Content */,
+			);
+			path = MVVMExample;
+			sourceTree = "<group>";
+		};
+		EF4217772D7598A900A91CE5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EF4217782D7598C600A91CE5 /* Webservice.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EF42177A2D7598F500A91CE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF42177B2D75990400A91CE5 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF42177D2D759BD600A91CE5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF42177E2D759BEC00A91CE5 /* ProductListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +114,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				EF42175E2D75987A00A91CE5 /* MVVMExample */,
 			);
 			name = MVVMExample;
 			packageProductDependencies = (
@@ -109,6 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4217732D75988700A91CE5 /* Preview Assets.xcassets in Resources */,
+				EF4217742D75988700A91CE5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4217752D75988700A91CE5 /* ContentView.swift in Sources */,
+				EF42177F2D759BEC00A91CE5 /* ProductListViewModel.swift in Sources */,
+				EF42177C2D75990400A91CE5 /* Product.swift in Sources */,
+				EF4217762D75988700A91CE5 /* MVVMExampleApp.swift in Sources */,
+				EF4217792D7598C600A91CE5 /* Webservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

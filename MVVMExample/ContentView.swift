@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var vm = ProductListViewModel(webService: Webservice())
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List(vm.products) { product in
+            HStack {
+                Text(product.title)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(2)
+                    .frame(maxWidth: 200,alignment: .leading)
+                
+                Spacer()
+                
+                Text("Price: \(Int(product.price))")
+            }
         }
-        .padding()
+        .listStyle(.plain)
+        .task {
+            await vm.populateProducts()
+        }
     }
 }
 
